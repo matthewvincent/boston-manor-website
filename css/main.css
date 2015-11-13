@@ -60,9 +60,11 @@ body {
 #spotify {
     margin-top: 40px;
     width: 300px;
+    opacity: .7;
+    transition: all .2s ease-in-out;
 }
 #spotify:hover {
-    opacity: .7;
+    opacity: 1;
 }
 .button:hover {
     transform: scale(1.1);
