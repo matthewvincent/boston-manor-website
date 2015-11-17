@@ -179,6 +179,7 @@ body {
     background-color: white;
     padding: 10px;
     margin: 10px;
+    border-bottom: solid 8px #f9f2e8;
 }
 .tumblr_photo {
     background-color: white;
@@ -190,22 +191,39 @@ body {
     padding: 10px;
 
 }
+.tumblr_quote {
+    background-color: white;
+}
+.tumblr_quote_post {
+    background-color: white;
+}
+.tumblr_link_post {
+    background-color: white;
+}
+.tumblr_description {
+    background-color: white;
+
+}
 .tumblr_post {      
     text-align: center;
     color: black;
     padding: 10px;
     margin: auto;
+
+
 }
 .tumblr_title { 
 
 }
 .tumblr_body img {  
     text-align: center;
+
 }
 .tumblr_text_post {
     background-color: white;
     padding: 10px;
     margin: 20px;
+    border-bottom: solid 6px #f9f2e8;
 }
 .read_more_container {
     
