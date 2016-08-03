@@ -4,18 +4,43 @@
    Author's custom styles
    ========================================================================== */
 body {
-    background-color: #3f3130;
+    background-color: #9cb8bf;
     font-family: Lato;
     font-weight: 900;
     color: white;
 }
+
+/* hide tumblr bullshit */
+.tmblr-iframe{ display: none; }
+.tmblr-iframe--controls-phone-container{ margin-top: -43px; }
+
 @media (max-width: 768px) {
       #main-jumbo {
-        background-image: url("");
+        background-image: url("../img/bostonManorPromo.jpg");
         width: 100%;
         height: 1000px;
         margin-bottom: 0px;
     }
+}
+.album {
+    -webkit-box-shadow: 
+        0px 3px 11px -1px rgba(0,0,0,0.3),
+        0px -3px 11px -1px rgba(0,0,0,0.3);
+    -moz-box-shadow: 
+        0px 3px 11px -1px rgba(0,0,0,0.3),
+        0px -3px 11px -1px rgba(0,0,0,0.3);
+    box-shadow: 
+        0px 3px 11px -1px rgba(0,0,0,0.3),
+        0px -3px 11px -1px rgba(0,0,0,0.3);
+}
+
+.album-title {
+    font-size: 80px;
+    color: white;
+}
+
+.footer {
+    margin-top: 200px;
 }
 
 .glyphicon-globe {
@@ -36,13 +61,18 @@ body {
 }
 
 .dates {
-    overflow: scroll;
+    overflow: auto;
+}
+
+.dates a {
+    color: black;
 }
 .album {
     max-width: 600px;
 }
 .new-album {
     color: white;
+    margin-top: -20px;
 }
 .button {
     width: 400px;
@@ -51,25 +81,40 @@ body {
     font-size: 20px;
     color: white;
     background-color: transparent;
-    border: 4px solid;
-    border-radius: 2px;
+    border: 1px solid;
+    border-radius: 60px;
     margin: 10px;
     letter-spacing: 2px;
     transition: all .2s ease-in-out;
 }
-#spotify {
-    margin-top: 40px;
-    width: 300px;
+
+
+.spotify-button {
+    display: inline-block;
+    margin: 20px;
+    background-color: white;
+    padding: 5px;
+    padding-right: 280px;
+    border-radius: 60px;
+    width: 400px;
+    max-height: 50px;
     opacity: .7;
     transition: all .2s ease-in-out;
+    margin-bottom: -20px;
 }
-#spotify:hover {
+
+.spotify-button img {
+    width: 140px;
+    transform: scale(.7);
+    margin-left: -15px;
+}
+
+.spotify-button:hover {
     opacity: 1;
 }
 .button:hover {
-    transform: scale(1.1);
-    margin-right: 20px;
-    margin-left: 20px;
+    color: #9cb8bf;
+    background-color: white;
 }
 .button:focus {
     text-decoration: none;
@@ -87,6 +132,7 @@ body {
 #myNavbar {
     background-color: white;
             margin-bottom: 0px;
+
 }
 #myNavbar a {
 
@@ -120,6 +166,7 @@ body {
           background-color: #f9f2e8;
           border: transparent;
           border-bottom-color: transparent;
+
           } 
 #myCarousel {
     width:560px;
@@ -140,7 +187,7 @@ body {
     color: ;
 }
 #main-jumbo {
-    background-image: url("../img/bostonManorPromo.jpg");
+    background: url("../img/bostonManorPromo.jpg") no-repeat bottom center;
     padding: 0px;
     width: 100%;
     height: 1000px;
@@ -149,7 +196,13 @@ body {
     background-color: transparent;
     background-position: 0% 20%;
     background-size: cover;
-    background-repeat: no-repeat;    
+    background-repeat: no-repeat;
+    -webkit-box-shadow: 
+        0px 3px 11px -1px rgba(0,0,0,0.3);
+    -moz-box-shadow: 
+        0px 3px 11px -1px rgba(0,0,0,0.3);
+    box-shadow: 
+        0px 3px 11px -1px rgba(0,0,0,0.3);  
 }
 #promo-jumbo {
     margin-bottom: 50px;
@@ -253,7 +306,7 @@ ol.tumblr_posts{
 }
 
 .content {
-    margin-topj: 30px;
+    margin-top: 30px;
 }
 
 .one-edge-shadow {
@@ -296,8 +349,9 @@ ol.tumblr_posts{
     border-radius: 50%;
     text-align: center;
     padding-top: 8px;
-    color: white;
-    border: solid white 2px;
+    color: black;
+    background-color: rgba(255,255,255, .8);
+    border: solid rgba(255,255,255, .8) 2px;
     transition: all .2s ease-in-out;
 }
 .social-button:hover {
@@ -325,8 +379,16 @@ ol.tumblr_posts{
     margin-bottom: 30px;
     margin-top: -10px;
     background-color: white;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
+    -webkit-box-shadow: 
+        0px 3px 11px -1px rgba(0,0,0,0.3),
+        0px -3px 11px -1px rgba(0,0,0,0.3);
+    -moz-box-shadow: 
+        0px 3px 11px -1px rgba(0,0,0,0.3),
+        0px -3px 11px -1px rgba(0,0,0,0.3);
+    box-shadow: 
+        0px 3px 11px -1px rgba(0,0,0,0.3),
+        0px -3px 11px -1px rgba(0,0,0,0.3);
+
 }
 .single-video {
     margin-top: 50px;
@@ -377,7 +439,7 @@ body {
     #social {
         margin-right: 45px;
         margin-bottom: -10px;
-        margin-top: -550px;
+        margin-top: -340px;
     }
 }
 @media (max-width: 1400px) {
@@ -387,22 +449,23 @@ body {
         text-align: center;
     }
     #main-jumbo {
-        height: 400px;
-        background-image: url("../img/bostonManorPromoMedium.png");
+        background-image: url("../img/bostonManorPromo.jpg");
+        height: 600px;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
+    .social-wrapper {
+        margin-top: 400px;
+    }
+
      #social {
-            margin-right: 45px;
-            margin-bottom: -10px;
-            margin-top: -350px;
-        }
+        margin-right: 45px;
+        margin-top: 0px;
+    }
       #main-jumbo {
-        height: 600px;
-        background-image: url("../img/bostonManorPromoMedium.png");
-        width: 768px;
-        background-color: white;
+        background-image: url("../img/bostonManorPromo.jpg");
+        height: 500px;
         width: 100%;
         margin-bottom: 0px;
     }
@@ -430,10 +493,17 @@ body {
     }
 }
 @media (max-width: 414px) {
+    .album-title {
+        font-size: 40px;
+    }
+
+    .social-wrapper {
+        margin-top: 200px;
+    }
     #social {
         margin-right: 45px;
         margin-bottom: -10px;
-        margin-top: -620px;
+
     }
      .main-banner {
         height: 1000px;
@@ -442,7 +512,7 @@ body {
         text-align: center;
     }
      #main-jumbo {
-        width: 414px;
+        height: 200px;
         width: 100%;
 
     }
@@ -457,6 +527,17 @@ body {
         padding: auto;
         font-size: 20px;
     }
+    .spotify-button {
+        text-align: center;
+        width: 250px;
+        padding: 0 auto;
+        padding-right: 120px;
+    }
+
+    .spotify-button img {
+        margin-left: -20px;
+    }
+
     .button:hover {
         margin-right: 0px;
         margin-left: 0px;
@@ -487,21 +568,13 @@ body {
         max-width: 210px;
     }
     #main-jumbo {
-        background-image: url("../img/bostonManorPromoSmall.png");
         height: 300px;
     }
-    #spotify {
-        margin-top: 20px;
-        width: 230px;
-    }
-}
 }
 @media (max-width: 375px) {
 
     #social {
         margin-right: 45px;
-        margin-bottom: -10px;
-        margin-top: -5px;
     }
     .html5-video-container {
         max-width: 300px;
@@ -519,9 +592,6 @@ body {
         text-align: center;
         max-width: 210px;
     }
-    #main-jumbo {
-        background-image: url("../img/bostonManorPromoSmaller.png");
-    }
     .social-button {
         height: 33px;
         width: 33px;
@@ -529,7 +599,7 @@ body {
         padding-top: 6px;
     }
     .social-wrapper {
-        margin-top: 0px;
+        margin-top: 230px;
         width: 100%;
         text-align: center;
     }
@@ -585,12 +655,14 @@ body {
 }
 @media (max-width: 320px) {
      #main-jumbo {
-        background-image: url("../img/bostonManorPromoSmaller.png");
+        background-image: url("../img/bostonManorPromo.jpg");
         height: 250px;
     }
     #social {
-        margin-top: -650px;
         margin-right: 30px;
+    }
+    .social-wrapper {
+        margin-top: 200px;
     }
      .social-button {
         height: 30px;
@@ -603,6 +675,6 @@ body {
         text-align: center;
     }
     .album {
-        margin-left: -10px;
+        
     }
 }
