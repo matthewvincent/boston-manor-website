@@ -42,6 +42,10 @@ body {
     color: white;
 }
 
+.album-title-wrapper {
+    margin-bottom: -38px;
+}
+
 .footer {
     margin-top: 200px;
 }
@@ -58,7 +62,7 @@ body {
     max-width: 300px;
 }
 .album-promo {
-    margin-top: 40px;
+    margin-top: 90px;
     text-align: center;
     float: right;
 }
@@ -94,7 +98,7 @@ body {
 
 .spotify-button {
     display: inline-block;
-    margin: 20px;
+    margin: 10px;
     background-color: white;
     padding: 5px;
     padding-right: 280px;
@@ -103,7 +107,6 @@ body {
     max-height: 50px;
     opacity: .7;
     transition: all .2s ease-in-out;
-    margin-bottom: -20px;
 }
 
 .spotify-button img {
@@ -380,7 +383,7 @@ ol.tumblr_posts{
     padding: 20px;
     text-align: center;
     margin-bottom: 30px;
-    margin-top: -10px;
+    margin-top: -80px;
     background-color: rgba(255,255,255,.9);
     -webkit-box-shadow: 
         0px 3px 11px -1px rgba(0,0,0,0.3),
@@ -458,6 +461,9 @@ body {
 }
 
 @media (max-width: 769px) {
+    .album-promo {
+        margin-top: 40px;
+    }
     .social-wrapper {
         margin-top: 400px;
     }
@@ -496,6 +502,11 @@ body {
     }
 }
 @media (max-width: 414px) {
+
+    .single-banner {
+        margin-top: -230px;
+    }
+
     .album-title {
         font-size: 40px;
     }
@@ -575,6 +586,9 @@ body {
     }
 }
 @media (max-width: 375px) {
+    .single-banner {
+        margin-top: -150px;
+    }
 
     #social {
         margin-right: 45px;
