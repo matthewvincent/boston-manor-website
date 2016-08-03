@@ -98,7 +98,7 @@ body {
 
 .spotify-button {
     display: inline-block;
-    margin: 10px;
+    margin: 20px;
     background-color: white;
     padding: 5px;
     padding-right: 280px;
@@ -461,6 +461,9 @@ body {
 }
 
 @media (max-width: 769px) {
+    .spotify-button {
+        margin: 10px;
+    }
     .album-promo {
         margin-top: 40px;
     }
